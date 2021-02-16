@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team</title>
+  </head>
+  <body>
+    <h2><%= team.full_name %></h2>
+    <p>Abbreviation: <strong><%= team.abbreviation %></strong></p>
+    <p>
+      Conference:
+      <strong
+        ><a href="/teams?conf=<%= team.conference %>"
+          ><%= team.conference %></a
+        ></strong
+      >
+    </p>
+    <p>City: <strong><%= team.city %></strong></p>
+  </body>
+</html>
